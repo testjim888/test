@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   tasks:
   - name: Obtain the ACL for a specific file
     ansible.posix.acl:
