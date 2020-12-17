@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-- name: Obtain the ACL for a specific file
-  ansible.posix.acl:
-    path: ./README.md
-  register: acl_info
+  - name: Obtain the ACL for a specific file
+    ansible.posix.acl:
+      path: ./README.md
+    register: acl_info
