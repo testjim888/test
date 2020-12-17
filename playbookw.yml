@@ -1,8 +1,7 @@
 ---
 - hosts: localhost
   tasks:
-  # Set vm.swappiness to 5 in /etc/sysctl.conf
-  - ansible.posix.sysctl:
-      name: vm.swappiness
-      value: '5'
-      state: present
+- name: Obtain the ACL for a specific file
+  ansible.posix.acl:
+    path: ./README.md
+  register: acl_info
