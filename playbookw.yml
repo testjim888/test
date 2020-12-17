@@ -3,7 +3,7 @@
   tasks:
     - name: Grant user Joe read access to a file
       ansible.posix.acl:
-        path: ./README.md
+        path: README.md
         entity: vagrant
         etype: user
         permissions: r
